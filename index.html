@@ -228,9 +228,18 @@ nav ul{flex:1;min-width:0;justify-content:space-evenly;gap:6px;margin:0;overflow
 nav ul li{flex:none}
 nav ul a{display:block;padding:6px 2px}
 .nb{flex:none;padding:8px 14px;font-size:12.5px}
-.hero .hg{grid-template-columns:1.15fr 1fr;align-items:stretch}
-.hero .pw{height:100%;max-width:none;margin:0;align-self:stretch}
-.hero .pw img{height:100%;aspect-ratio:auto;object-position:50% 22%}
+.hero .hg{grid-template-columns:1.1fr 1fr;gap:0 18px;align-items:center}
+.hero .hg>div:first-child{display:contents}
+.hero .pill{grid-column:1;grid-row:1;justify-self:start;font-size:10.5px;padding:6px 11px;margin:0 0 12px;border-radius:18px;line-height:1.35}
+.hero .hi{grid-column:1;grid-row:2;font-size:13px;margin:0 0 2px}
+.hero h1{grid-column:1;grid-row:3;font-size:clamp(30px,10vw,60px)}
+.hero .pw{grid-column:2;grid-row:1/4;align-self:stretch;position:relative;max-width:none;width:100%;margin:0;min-height:170px}
+.hero .pw img{position:absolute;inset:0;width:100%;height:100%;aspect-ratio:auto;object-fit:cover;object-position:50% 18%}
+.hero .lead{grid-column:1/-1;font-size:13px;line-height:1.6;margin:22px 0 16px;max-width:none}
+.hero .ci{grid-column:1/-1;font-size:12px;gap:8px;margin:0 0 20px}
+.hero .ci a{white-space:nowrap;overflow-wrap:normal}
+.hero .cta{grid-column:1/-1;flex-wrap:nowrap}
+.hero .cta .btn{flex:1;justify-content:center;padding:11px 10px;font-size:13px}
 }
 @media (max-width:380px){nav ul{font-size:11px;gap:2px}.nb{padding:8px 11px;font-size:12px}nav .in{padding-left:12px}}
 </style>
