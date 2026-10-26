@@ -219,7 +219,21 @@ footer{padding:12px 0 56px;color:var(--muted);font-size:14px;text-align:center}
 .ig{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:12px}.il{list-style:none;margin:0 0 8px;padding:0}.il li{display:flex;justify-content:space-between;gap:10px;align-items:center;padding:8px 0;border-top:1px solid var(--line);font-size:13.5px}.il b{display:block;font-size:13px}.il span:not(.stt2){color:var(--muted);font-size:12.5px}
 #cs .pc:nth-of-type(4){border-top-color:var(--p4)}#cs .pc:nth-of-type(5){border-top-color:var(--p1)}
 @media (max-width:900px){.ig,.prow{grid-template-columns:1fr}.cf{flex-direction:column}}
-.csb .box p+p{margin-top:10px}.csb .box p b,.csb ul.dot li b{color:var(--ink)}#cs .back{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:var(--accent-ink);padding:12px 24px;border-radius:999px;font:700 15px Montserrat,system-ui,sans-serif;border:0;box-shadow:0 10px 24px -12px var(--accent);transition:transform .15s}#cs .back:hover{color:var(--accent-ink);transform:translateX(-3px)}#cs .bar .btn{background:transparent;color:var(--ink);border-color:var(--line)}#cs .bar{box-shadow:0 8px 24px -18px rgba(15,23,42,.45)}@media (max-width:560px){#cs .bar .wrap{gap:10px}#cs .back{padding:11px 18px;font-size:14px}}@media (prefers-reduced-motion:reduce){#cs .back{transition:none}#cs .back:hover{transform:none}}@media (max-width:900px){.hero .hg{grid-template-columns:1.3fr 1fr;gap:16px;align-items:center}.hero .hg>div:first-child{min-width:0}.hero h1{font-size:clamp(28px,9.5vw,80px)}.hero .pill{font-size:11px;padding:6px 12px;margin-bottom:14px}.hero .hi{font-size:14px}.hero .lead{font-size:12.5px;line-height:1.55;margin:14px 0}.hero .ci{flex-direction:column;flex-wrap:nowrap;gap:6px;font-size:11px;margin:0 0 16px}.hero .ci a{white-space:normal;overflow-wrap:anywhere;align-items:flex-start}.hero .ci svg{width:13px;height:13px;margin-top:2px}.hero .cta{gap:8px}.hero .btn{padding:9px 14px;font-size:12.5px;border-radius:12px}}</style>
+.csb .box p+p{margin-top:10px}.csb .box p b,.csb ul.dot li b{color:var(--ink)}#cs .back{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:var(--accent-ink);padding:12px 24px;border-radius:999px;font:700 15px Montserrat,system-ui,sans-serif;border:0;box-shadow:0 10px 24px -12px var(--accent);transition:transform .15s}#cs .back:hover{color:var(--accent-ink);transform:translateX(-3px)}#cs .bar .btn{background:transparent;color:var(--ink);border-color:var(--line)}#cs .bar{box-shadow:0 8px 24px -18px rgba(15,23,42,.45)}@media (max-width:560px){#cs .bar .wrap{gap:10px}#cs .back{padding:11px 18px;font-size:14px}}@media (prefers-reduced-motion:reduce){#cs .back{transition:none}#cs .back:hover{transform:none}}@media (max-width:900px){.hero .hg{grid-template-columns:1.3fr 1fr;gap:16px;align-items:center}.hero .hg>div:first-child{min-width:0}.hero h1{font-size:clamp(28px,9.5vw,80px)}.hero .pill{font-size:11px;padding:6px 12px;margin-bottom:14px}.hero .hi{font-size:14px}.hero .lead{font-size:12.5px;line-height:1.55;margin:14px 0}.hero .ci{flex-direction:column;flex-wrap:nowrap;gap:6px;font-size:11px;margin:0 0 16px}.hero .ci a{white-space:normal;overflow-wrap:anywhere;align-items:flex-start}.hero .ci svg{width:13px;height:13px;margin-top:2px}.hero .cta{gap:8px}.hero .btn{padding:9px 14px;font-size:12.5px;border-radius:12px}}
+/* mobile-only: header fix + hero image height match */
+@media (max-width:700px){
+nav{padding:0 10px}
+nav .in{height:56px;padding:0 6px 0 16px;gap:8px}
+nav ul{flex:1;min-width:0;justify-content:space-evenly;gap:6px;margin:0;overflow:visible;font-size:12px;white-space:nowrap}
+nav ul li{flex:none}
+nav ul a{display:block;padding:6px 2px}
+.nb{flex:none;padding:8px 14px;font-size:12.5px}
+.hero .hg{grid-template-columns:1.15fr 1fr;align-items:stretch}
+.hero .pw{height:100%;max-width:none;margin:0;align-self:stretch}
+.hero .pw img{height:100%;aspect-ratio:auto;object-position:50% 22%}
+}
+@media (max-width:380px){nav ul{font-size:11px;gap:2px}.nb{padding:8px 11px;font-size:12px}nav .in{padding-left:12px}}
+</style>
 </head>
 <body>
 <div id="pg"></div>
